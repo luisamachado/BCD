@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-header">
+  <h1>Prova de {{ disc }}:</h1>
+</div>
+  <div class="row">
+    <div class="col-md-10">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Pergunta</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for perg in lista_perg.Perguntas %}
+        <tr>
+          <td>{{ perg.id }}</a></td>
+          <td><a href='/listar_respostas?idPergunta={{ perg.id }}'>{{ perg.pergunta }}</a></td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+  </div>
+{% endblock %}

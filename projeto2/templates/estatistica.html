@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-header">
+  <h1>Estatítica da Pergunta</h1>
+</div>
+  <div class="row">
+    <div class="col-md-10">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Quantidade de vezes que a pergunta foi usada:</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ hist }}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+{% endblock %}

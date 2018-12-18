@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-header">
+  <h1>Respostas:</h1>
+</div>
+  <div class="row">
+    <div class="col-md-10">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Correta</th>
+        <th>Alternativa</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for resp in resposta %}
+        <tr>
+          <td>{{ resp.idPergunta }}</td>
+          <td>{% if resp.correta %} Verdadeira {% else %} Falsa {% endif %}</td>
+          <td>{{ resp.alternativa }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+  </div>
+{% endblock %}

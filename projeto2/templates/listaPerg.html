@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-header">
+  <h1>Perguntas de {{ assunto.nome_assunto }}:</h1>
+</div>
+  <div class="row">
+    <div class="col-md-10">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Pergunta</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for perg in pergunta %}
+        <tr>
+          <td>{{ perg.idPergunta  }}</td>
+          <td><a href='/estatistica?idPergunta={{ perg.idPergunta }}'>{{ perg.pergunta }}</a></td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+      <HR><HR>
+      <div align="center">
+        <a href='/insere_perg?idAssunto={{ assunto.idAssunto }}'>Inserir Pergunta</a>
+      </div>
+      <HR><HR>
+    </div>
+  </div>
+{% endblock %}

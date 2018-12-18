@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-header">
+  <h1>Assuntos de {{ disciplina.nome_disc }}:</h1>
+</div>
+  <div class="row">
+    <div class="col-md-10">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nome</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for ass in assunto %}
+        <tr>
+          <td>{{ ass.idAssunto  }}</td>
+          <td><a href='/listar_pergunta?idAssunto={{ ass.idAssunto }}'>{{ ass.nome_assunto }}</a></td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+      <HR><HR>
+      <div align="center">
+        <a href='/insere_assunto?idDisciplina={{ disciplina.idDisciplina }}'>Inserir Assunto</a>
+      </div>
+      <HR><HR>
+    </div>
+  </div>
+{% endblock %}
