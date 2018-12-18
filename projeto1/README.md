@@ -2,7 +2,7 @@
 
 * Este projeto foi implementado utilizando a linguagem Java.
 
-# Passos para executar o projeto:
+## Passos para executar o projeto:
 * Abrir com o NetBeans IDE
 * Executar o projeto a partir da IDE
 
