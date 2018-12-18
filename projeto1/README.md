@@ -1,3 +1,9 @@
-# projeto-pratico-01-luisamachado
+# Projeto 1
 
-Para executar deste projeto basta abrí-lo com o NetBeans IDE (versão utilizada 8.2) e executar o projeto.
+* Este projeto foi implementado utilizando a linguagem Java.
+
+# Passos para executar o projeto:
+* Abrir com o NetBeans IDE
+* Executar o projeto a partir da IDE
+
+A versão do NetBeans IDE utilizada foi a 8.2
